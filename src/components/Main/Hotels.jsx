@@ -27,7 +27,7 @@ function Hotels() {
       setError(null);
 
       const response = await axios.get(
-        `http://localhost:5000/api/hotels/${encodeURIComponent(city)}`
+        `https://locallens.onrender.com/api/hotels/${encodeURIComponent(city)}`
       );
 
       const parsedData = JSON.parse(response.data);
@@ -46,7 +46,7 @@ function Hotels() {
     const fetchImage = async (name) => {
       try {
         const searchResponse = await axios.get(
-          `http://localhost:5000/api/places`,
+          `https://locallens.onrender.com/api/places`,
           {
             params: { query: name },
           }

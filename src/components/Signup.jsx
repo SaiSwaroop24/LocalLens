@@ -9,7 +9,7 @@ function Signup() {
 
   const handleSignup = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/signup', signupData);
+      const response = await axios.post('https://locallens.onrender.com/signup', signupData);
       alert(response.data.message);  // Display the signup success message
       setIsLogin(true);  // Switch to the login form after signup
     } catch (error) {
@@ -20,7 +20,7 @@ function Signup() {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/login', {
+      const response = await axios.post('https://locallens.onrender.com/login', {
         loginData
       });
       alert(response.data.message);  // Display the login success message

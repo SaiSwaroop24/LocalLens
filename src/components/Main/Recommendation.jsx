@@ -24,7 +24,7 @@ function Recommendation() {
     const fetchDetails = async () => {
       if (data) {
         try {
-          const result = await axios.post("http://localhost:5000/api/trip", data);
+          const result = await axios.post("https://locallens.onrender.com/api/trip", data);
           const resultData = JSON.parse(result.data);
           setResponse(resultData);
         } catch (err) {
@@ -39,7 +39,7 @@ function Recommendation() {
     const fetchImage = async (name, key, setImageFn) => {
       try {
         const searchResponse = await axios.get(
-          `http://localhost:5000/api/places`,
+          `https://locallens.onrender.com/api/places`,
           {
             params: { query: name },
           }

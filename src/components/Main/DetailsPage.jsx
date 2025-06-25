@@ -20,7 +20,7 @@ function DetailsPage() {
       try {
         setLoading(true);
         const response = await axios.get(
-          `http://localhost:5000/api/details/${encodeURIComponent(noSpace)}`
+          `https://locallens.onrender.com/api/details/${encodeURIComponent(noSpace)}`
         );
         const parsedData = JSON.parse(response.data);
         console.log(parsedData);
@@ -40,7 +40,7 @@ function DetailsPage() {
 
     const fetchImage = async (name) => {
       try {
-        const searchResponse = await axios.get(`http://localhost:5000/api/places`, {
+        const searchResponse = await axios.get(`https://locallens.onrender.com/api/places`, {
             params: { query: name },
         });
 
