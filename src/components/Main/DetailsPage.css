@@ -1,0 +1,130 @@
+/* DetailsPage.css */
+
+
+  
+  .details-container1 {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #fafafa;
+    
+    overflow: hidden;
+  }
+  
+  .page-title1 {
+    text-align: center;
+    font-size: 2.8em;
+    color: #2e7d32;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px #b0bec5;
+  }
+  
+  .loading-message1, .error-message1 {
+    text-align: center;
+    font-size: 1.4em;
+    color: #d32f2f;
+    margin-top: 20px;
+  }
+  
+  .section1 {
+    margin-bottom: 40px;
+  }
+  
+  .section1 h2 {
+    font-size: 2em;
+    color: #388e3c;
+    border-left: 5px solid #66bb6a;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .section1 p, .section1 ul {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #455a64;
+  }
+  
+  ul {
+    list-style: disc;
+    padding-left: 25px;
+  }
+  
+  .place-image1 {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .hotel-grid1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .hotel-block1 {
+    background: #d9e6d9;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .hotel-block1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hotel-image1 {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .hotel-info1 {
+    padding: 20px;
+    color: #37474f;
+  }
+  
+  .hotel-info1 h3 {
+    margin: 0 0 12px;
+    font-size: 1.6em;
+    color: #2e7d32;
+    font-weight: 600;
+  }
+  
+  .hotel-info1 p {
+    margin: 6px 0;
+    font-size: 1em;
+    color: #546e7a;
+  }
+  
+  /* Buttons and Links */
+  button {
+    font-family: inherit;
+    font-size: 1em;
+    color: #ffffff;
+    background: #388e3c;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  button:hover, a:hover {
+    background: #dcefdd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:focus, a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(200, 246, 202, 0.4);
+  }
