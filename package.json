@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.9",
     "bootstrap": "^5.3.3",
+    "cors": "^2.8.5",
     "express": "^4.21.2",
     "openai": "^4.75.0",
     "react": "^18.3.1",
